@@ -19,7 +19,7 @@ int main() {
 
     int countA = 0, countE = 0, countI = 0, countO = 0, countU = 0, vowelCount = 0;
 
-    for (size_t i = 0; i < word.length(); i++) {
+    for (auto i = 0; i < word.length(); i++) {
         char letter = word[i];
         switch (letter) {
             case 'a':
@@ -44,7 +44,7 @@ int main() {
     int totalCount = countA + countE + countI + countO + countU;
 
     // Other logic to calculate the total count of vowels
-    for (size_t i = 0; i < word.length(); i++) {
+    for (auto i = 0; i < word.length(); i++) {
         char letter = word[i];
         if(letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u'){
             vowelCount++;
